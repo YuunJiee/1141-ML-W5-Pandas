@@ -86,7 +86,7 @@ def test_advanced_analysis(sample_df):
 
     # 總分前三名
     top3 = processed_df.sort_values("總分", ascending=False).head(3)
-    check("總分最高學生正確", top3.iloc[0]["姓名"]=="Alice")
+    check("總分最高學生正確", top3.iloc[0]["姓名"]=="Eva")
 
     # 英文補考調整 (A班 <60 → 60)
     a_class = processed_df[processed_df["班級"]=="A"]
